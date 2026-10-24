@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="DopaLessのプライバシーポリシー。アプリの設定情報、問い合わせ情報の取り扱いと連絡先をご案内します。">
+  <title>プライバシーポリシー | DopaLess</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f6f8fa;
+      --surface: #ffffff;
+      --text: #202b38;
+      --muted: #596575;
+      --line: #dce2e8;
+      --link: #2357a3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      font-size: 16px;
+      line-height: 1.9;
+      overflow-wrap: anywhere;
+    }
+    main {
+      max-width: 820px;
+      margin: 48px auto;
+      padding: 40px 48px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .app-name { margin: 0 0 4px; color: var(--muted); font-weight: 600; }
+    h1 { margin: 0; font-size: clamp(1.6rem, 5vw, 2rem); line-height: 1.5; }
+    .dates { margin: 12px 0 28px; color: var(--muted); font-size: 0.875rem; }
+    h2 { margin: 36px 0 12px; font-size: 1.15rem; line-height: 1.7; }
+    p { margin: 12px 0; }
+    ul { margin: 12px 0; padding-left: 1.5em; }
+    li { margin: 6px 0; }
+    a { color: var(--link); text-underline-offset: 0.2em; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; border-radius: 2px; }
+    .contact { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .contact h2 { margin-top: 0; }
+    address { font-style: normal; }
+    footer { margin-top: 28px; color: var(--muted); font-size: 0.875rem; }
+    @media (max-width: 600px) {
+      main { margin: 16px 12px; padding: 28px 22px; border-radius: 12px; }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #141a22;
+        --surface: #1b2430;
+        --text: #e5ebf2;
+        --muted: #aebaca;
+        --line: #354255;
+        --link: #9dc4ff;
+      }
+    }
+    @media print {
+      main { max-width: none; margin: 0; padding: 0; border: 0; }
+      body { background: white; color: black; }
+      h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="app-name">DopaLess</p>
+      <h1>プライバシーポリシー</h1>
+      <p class="dates">制定日・最終更新日：<time datetime="2026-10-24">2026年10月24日</time></p>
+    </header>
+
+    <p>Hiroki Tanaka（以下「開発者」）は、アプリ「DopaLess」（以下「本アプリ」）および本アプリに関するお問い合わせで取り扱う情報について、以下のとおり説明します。</p>
+
+    <section aria-labelledby="app-data">
+      <h2 id="app-data">1. アプリで取り扱う情報</h2>
+      <p>本アプリは、ユーザーが許可したAppleのスクリーンタイム関連機能を使用し、次の情報を取り扱います。</p>
+      <ul>
+        <li>制限対象として選択したアプリ・Webサイトの識別情報（Appleの機能を通じて扱うトークン）</li>
+        <li>制限する曜日、開始・終了時刻、自動制限の有効・無効</li>
+        <li>手動制限の状態と有効期限、監視を識別する情報など、制限の動作に必要な設定</li>
+      </ul>
+      <p>本アプリには、アプリの使用時間やWebサイトの閲覧履歴を収集・集計する機能はありません。</p>
+    </section>
+
+    <section aria-labelledby="purpose-storage">
+      <h2 id="purpose-storage">2. 利用目的と保存場所</h2>
+      <p>これらの情報は、選択した対象の制限・解除、指定した曜日・時間帯の自動制限、設定の保存・復元のために使用します。</p>
+      <p>設定情報は端末内に保存し、本アプリと自動制限を担当する拡張機能の間で共有します。設定情報を開発者のサーバーへ送信する仕組みはありません。本アプリには広告や外部の利用状況分析SDKを組み込んでいません。</p>
+    </section>
+
+    <section aria-labelledby="retention-controls">
+      <h2 id="retention-controls">3. 設定の保持・変更と権限の取り消し</h2>
+      <p>設定情報は、機能を継続して提供するために端末内に保持します。選択対象、曜日、時間帯などはアプリ内で変更できます。対象の選択を解除して保存すると、その対象は保存済みの選択から外れます。</p>
+      <p>スクリーンタイムの権限はiOSの設定から取り消せます。本アプリが権限の取り消しを検出すると、選択対象と手動制限の情報を消去し、自動制限と監視を停止して制限を解除します。曜日・開始時刻・終了時刻の設定は保持します。再許可後は対象を選び直し、自動制限を使う場合は有効にして保存する必要があります。</p>
+      <p>開発者は端末内の設定情報を遠隔で参照・削除できません。設定情報の取り扱いや削除方法に関するご質問は、下記の窓口へご連絡ください。</p>
+    </section>
+
+    <section aria-labelledby="support-data">
+      <h2 id="support-data">4. お問い合わせで受け取る情報</h2>
+      <p>メールでお問い合わせいただいた場合、メールアドレス、本文、任意でお送りいただいた氏名・画像などの情報を受け取ります。これらはお問い合わせへの回答、不具合の調査、対応内容の確認に使用します。</p>
+      <p>お問い合わせへの対応にはGoogleのGmailを使用します。情報は対応およびその後の確認に必要な期間保管し、不要になった情報は削除します。お問い合わせ情報の削除をご希望の場合は、同じ窓口へご連絡ください。</p>
+      <p>Googleによる情報の取り扱いについては、<a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a>をご確認ください。</p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">5. 第三者への提供</h2>
+      <p>端末内に保存したアプリの設定情報を、開発者が収集・販売したり、広告目的で第三者に提供したりすることはありません。</p>
+      <p>お問い合わせで受け取った情報は、回答に必要なメールサービスでの処理や法令に基づく場合を除き、ご本人の同意なく第三者に提供しません。</p>
+    </section>
+
+    <section aria-labelledby="website">
+      <h2 id="website">6. このWebページについて</h2>
+      <p>このページはGitHub Pagesを利用して公開します。閲覧時には、ページの配信・安全な運用などのため、GitHubがIPアドレス等のアクセス情報を取り扱う場合があります。このページには開発者による広告・アクセス解析用のスクリプトや外部埋め込みを追加していません。</p>
+      <p>GitHubによる情報の取り扱いについては、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubプライバシーステートメント</a>をご確認ください。</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">7. ポリシーの更新</h2>
+      <p>機能や情報の取り扱いを変更した場合などに、本ポリシーを更新することがあります。更新した内容はこのページに掲載し、最終更新日を変更します。</p>
+    </section>
+
+    <section class="contact" aria-labelledby="contact">
+      <h2 id="contact">8. お問い合わせ窓口</h2>
+      <address>
+        運営者：Hiroki Tanaka<br>
+        対象アプリ：DopaLess<br>
+        メール：<a href="mailto:dopaless.support@gmail.com">dopaless.support@gmail.com</a>
+      </address>
+    </section>
+
+    <footer>© 2026 Hiroki Tanaka</footer>
+  </main>
+</body>
+</html>
